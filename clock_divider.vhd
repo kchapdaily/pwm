@@ -1,10 +1,10 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: KEVIN CHAPMAN
+-- Engineer: 
 -- 
--- Create Date:    17:46:45 05/17/2013 
+-- Create Date:    18:38:06 05/17/2013 
 -- Design Name: 
--- Module Name:    pwm_module - Behavioral 
+-- Module Name:    clock_divider - Behavioral 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
@@ -29,22 +29,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity pwm_module is
-port(
-	clock 	: in std_logic; --default 100MHz
-	enable 	: in std_logic;
-	freq 		: in integer; --frequency of pwm output
-	duty		: in integer; --duty cycle of the pwm output, 0 through 99
-	pwm 		: out std_logic
-	);
-end pwm_module;
-
-architecture Behavioral of pwm_module is
-signal enable_count : integer;
-signal pwm_count : integer;
-signal div_clock : std_logic;
-
-component clock_divider is
+entity clock_divider is
 generic(
 	freq  : integer := 100000
 	);
@@ -52,21 +37,25 @@ port(
 	clock : in std_logic;
 	div	: out std_logic
 	);
-end component;
+end clock_divider;
 
+architecture Behavioral of clock_divider is
+signal count : std_logic:=0;
 begin
 
-pwm_freq_clk:clock_divider
-generic map(freq => 2000)
-port map(
-	clock => clock,
-	div => div_clock
-	);
+process(clock)
+begin	
+	if rising_edge(clock) then
+		if count = 0 then
+			div <= '1';
+			count <= ((100000000/freq)-1);
+		else
+			div <= '0';
+			enable_count <= count - 1;
+		end if;
+	end if;
+end process;
+
 
 end Behavioral;
-
-
-
-
-
 

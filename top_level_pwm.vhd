@@ -3,7 +3,7 @@
 -- Engineer: KEVIN CHAPMAN
 -- 
 -- Create Date:    21:13:23 05/16/2013 
--- Design Name: 
+-- Design Name:	  	
 -- Module Name:    top_level_pwm - Behavioral 
 -- Project Name: 
 -- Target Devices: 
@@ -30,6 +30,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity top_level_pwm is
+port(
+	clock : in std_logic; --default 100MHz
+	button : in std_logic --will be used to change the pwm duty cycle
+	);
 end top_level_pwm;
 
 architecture Behavioral of top_level_pwm is
