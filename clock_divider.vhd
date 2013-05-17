@@ -30,11 +30,9 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity clock_divider is
-generic(
-	freq  : integer := 100000
-	);
 port(
 	clock : in std_logic;
+	freq  : in integer;
 	div	: out std_logic
 	);
 end clock_divider;
@@ -43,19 +41,18 @@ architecture Behavioral of clock_divider is
 signal count : std_logic:=0;
 begin
 
-process(clock)
-begin	
-	if rising_edge(clock) then
-		if count = 0 then
-			div <= '1';
-			count <= ((100000000/freq)-1);
-		else
-			div <= '0';
-			enable_count <= count - 1;
+	process(clock)
+	begin	
+		if rising_edge(clock) then
+			if count = 0 then
+				div <= '1';
+				count <= ((100000000/freq)-1);
+			else
+				div <= '0';
+				enable_count <= count - 1;
+			end if;
 		end if;
-	end if;
-end process;
-
+	end process;
 
 end Behavioral;
 

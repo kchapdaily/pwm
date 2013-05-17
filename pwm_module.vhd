@@ -33,8 +33,8 @@ entity pwm_module is
 port(
 	clock 	: in std_logic; --default 100MHz
 	enable 	: in std_logic;
-	freq 		: in integer; --frequency of pwm output
 	duty		: in integer; --duty cycle of the pwm output, 0 through 99
+	freq 		: in integer; --frequency of pwm output
 	pwm 		: out std_logic
 	);
 end pwm_module;
@@ -44,23 +44,21 @@ signal enable_count : integer;
 signal pwm_count : integer;
 signal div_clock : std_logic;
 
-component clock_divider is
-generic(
-	freq  : integer := 100000
-	);
+component clock_divider is	
 port(
 	clock : in std_logic;
+	freq  : in integer;
 	div	: out std_logic
 	);
 end component;
 
 begin
 
-pwm_freq_clk:clock_divider
-generic map(freq => 2000)
+clock_divider
 port map(
 	clock => clock,
-	div => div_clock
+	freq  => freq,
+	div 	=> div_clock
 	);
 
 end Behavioral;
