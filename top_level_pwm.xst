@@ -1,6 +1,9 @@
-set -tmpdir "/home/kevin/projects/pwm/xst/projnav.tmp"
-set -xsthdpdir "/home/kevin/projects/pwm/xst"
-run -compileonly yes
+set -tmpdir "xst/projnav.tmp"
+set -xsthdpdir "xst"
+run
+-ifn top_level_pwm.prj
+-ofn top_level_pwm
+-ofmt NGC
 -p xc6slx16-3-csg324
 -top top_level_pwm
 -opt_mode Speed
@@ -47,4 +50,3 @@ run -compileonly yes
 -iob Auto
 -equivalent_register_removal YES
 -slice_utilization_ratio_maxmargin 5
--ifn top_level_pwm.prj

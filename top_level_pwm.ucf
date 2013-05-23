@@ -1,0 +1,8 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "clock" LOC = V10;
+NET "enable" LOC = T10;
+NET "led" LOC = U16;
+NET "rled" LOC = V16;
+

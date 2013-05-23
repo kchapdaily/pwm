@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/kevin/projects/pwm/top_level_pwm.ncd
+OUTFILE=/home/kevin/projects/pwm/top_level_pwm.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=/home/kevin/projects/pwm
+LICENSE=WebPack
+USER_INFO=210664866_0_0_756

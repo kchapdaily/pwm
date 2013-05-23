@@ -1,0 +1,83 @@
+#-----------------------------------------------------------
+# PlanAhead v14.5 (64-bit)
+# Build 247527 by xbuild on Mon Mar 25 17:11:23 MDT 2013
+# Start of session at: Thu May 23 00:29:15 2013
+# Process ID: 2826
+# Log file: /home/kevin/projects/pwm/planAhead_run_1/planAhead.log
+# Journal file: /home/kevin/projects/pwm/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source /home/kevin/projects/pwm/pa.fromHdl.tcl
+# create_project -name pwm -dir "/home/kevin/projects/pwm/planAhead_run_1" -part xc6slx16csg324-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "top_level_pwm.ucf" [current_fileset -constrset]
+Adding file '/home/kevin/projects/pwm/top_level_pwm.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {pwm_module.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {top_level_pwm.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top top_level_pwm $srcset
+# add_files [list {top_level_pwm.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx16csg324-3
+Using Verific elaboration
+Parsing VHDL file "/opt/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "/opt/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "/home/kevin/projects/pwm/pwm_module.vhd" into library work
+Parsing VHDL file "/home/kevin/projects/pwm/top_level_pwm.vhd" into library work
+Loading clock regions from /opt/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from /opt/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from /opt/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from /opt/Xilinx/14.5/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from /opt/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.5/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [/home/kevin/projects/pwm/top_level_pwm.ucf]
+Finished Parsing UCF File [/home/kevin/projects/pwm/top_level_pwm.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 8db758dd
+open_rtl_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2825.383 ; gain = 169.305
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin B8 [get_ports button]
+endgroup
+set_property package_pin "" [get_ports [list  clock]]
+startgroup
+set_property package_pin C9 [get_ports button]
+endgroup
+set_property package_pin "" [get_ports [list  clock]]
+startgroup
+set_property package_pin B8 [get_ports button]
+endgroup
+startgroup
+set_property package_pin V10 [get_ports clock]
+endgroup
+startgroup
+set_property package_pin T10 [get_ports enable_button]
+endgroup
+save_constraints
+startgroup
+set_property package_pin U16 [get_ports led]
+endgroup
+set_property is_loc_fixed false [get_ports [list  led]]
+set_property is_loc_fixed true [get_ports [list  led]]
+save_constraints
+exit
+ERROR: [#UNDEF] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See /home/kevin/projects/pwm/planAhead_pid2826.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Thu May 23 00:33:03 2013...
+INFO: [Common 17-83] Releasing license: PlanAhead

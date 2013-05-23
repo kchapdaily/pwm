@@ -31,14 +31,40 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity top_level_pwm is
 port(
-	clock : in std_logic; --default 100MHz
-	button : in std_logic --will be used to change the pwm duty cycle
+	clock 			: in std_logic; --default 100MHz
+--	button 			: in std_logic; --will be used to change the pwm duty cycle
+	enable 			: in std_logic;
+	led 				: out std_logic;
+	rled				: out std_logic
 	);
 end top_level_pwm;
 
 architecture Behavioral of top_level_pwm is
+signal pwm : std_logic;
+
+component pwm_module is
+port(
+	clock 	: in std_logic; --default 100MHz
+	enable 	: in std_logic;
+--	duty		: in integer; --duty cycle of the pwm output, 0 through 99
+	--freq 		: in integer; --frequency of pwm output in Hz
+	pwm_out	: out std_logic
+	);
+end component;
 
 begin
+
+	led <= pwm;
+	rled <= '1';
+	
+inst_pwm_module:pwm_module
+port map(
+	clock => clock,
+	enable => enable,
+--	duty => 50,
+	--freq => 2000,
+	pwm_out => pwm
+	);
 
 
 end Behavioral;

@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/kevin/projects/pwm/impact.xsl
+OUTFILE=/home/kevin/projects/pwm/impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=/home/kevin/projects/pwm
+LICENSE=iMPACT
+USER_INFO=iMPACT

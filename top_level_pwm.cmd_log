@@ -1,0 +1,63 @@
+xst -intstyle ise -ifn "/home/kevin/projects/pwm/top_level_pwm.xst" -ofn "/home/kevin/projects/pwm/top_level_pwm.syr" 
+xst -intstyle ise -ifn "/home/kevin/projects/pwm/top_level_pwm.xst" -ofn "/home/kevin/projects/pwm/top_level_pwm.syr" 
+xst -intstyle ise -ifn "/home/kevin/projects/pwm/top_level_pwm.xst" -ofn "/home/kevin/projects/pwm/top_level_pwm.syr" 
+xst -intstyle ise -ifn "/home/kevin/projects/pwm/top_level_pwm.xst" -ofn "/home/kevin/projects/pwm/top_level_pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_level_pwm.ucf -p xc6slx16-csg324-3 top_level_pwm.ngc top_level_pwm.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_level_pwm_map.ncd top_level_pwm.ngd top_level_pwm.pcf 
+par -w -intstyle ise -ol high -mt off top_level_pwm_map.ncd top_level_pwm.ncd top_level_pwm.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_level_pwm.twx top_level_pwm.ncd -o top_level_pwm.twr top_level_pwm.pcf -ucf top_level_pwm.ucf 
+bitgen -intstyle ise -f top_level_pwm.ut top_level_pwm.ncd 
+xst -intstyle ise -ifn "/home/kevin/projects/pwm/top_level_pwm.xst" -ofn "/home/kevin/projects/pwm/top_level_pwm.syr" 
+xst -intstyle ise -ifn "/home/kevin/projects/pwm/top_level_pwm.xst" -ofn "/home/kevin/projects/pwm/top_level_pwm.syr" 
+xst -intstyle ise -ifn "/home/kevin/projects/pwm/top_level_pwm.xst" -ofn "/home/kevin/projects/pwm/top_level_pwm.syr" 
+xst -intstyle ise -ifn "/home/kevin/projects/pwm/top_level_pwm.xst" -ofn "/home/kevin/projects/pwm/top_level_pwm.syr" 
+xst -intstyle ise -ifn "/home/kevin/projects/pwm/top_level_pwm.xst" -ofn "/home/kevin/projects/pwm/top_level_pwm.syr" 
+xst -intstyle ise -ifn "/home/kevin/projects/pwm/top_level_pwm.xst" -ofn "/home/kevin/projects/pwm/top_level_pwm.syr" 
+xst -intstyle ise -ifn "/home/kevin/projects/pwm/top_level_pwm.xst" -ofn "/home/kevin/projects/pwm/top_level_pwm.syr" 
+xst -intstyle ise -ifn "/home/kevin/projects/pwm/top_level_pwm.xst" -ofn "/home/kevin/projects/pwm/top_level_pwm.syr" 
+xst -intstyle ise -ifn "/home/kevin/projects/pwm/top_level_pwm.xst" -ofn "/home/kevin/projects/pwm/top_level_pwm.syr" 
+xst -intstyle ise -ifn "/home/kevin/projects/pwm/top_level_pwm.xst" -ofn "/home/kevin/projects/pwm/top_level_pwm.syr" 
+xst -intstyle ise -ifn "/home/kevin/projects/pwm/top_level_pwm.xst" -ofn "/home/kevin/projects/pwm/top_level_pwm.syr" 
+xst -intstyle ise -ifn "/home/kevin/projects/pwm/top_level_pwm.xst" -ofn "/home/kevin/projects/pwm/top_level_pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_level_pwm.ucf -p xc6slx16-csg324-3 top_level_pwm.ngc top_level_pwm.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_level_pwm.ucf -p xc6slx16-csg324-3 top_level_pwm.ngc top_level_pwm.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_level_pwm_map.ncd top_level_pwm.ngd top_level_pwm.pcf 
+par -w -intstyle ise -ol high -mt off top_level_pwm_map.ncd top_level_pwm.ncd top_level_pwm.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_level_pwm.twx top_level_pwm.ncd -o top_level_pwm.twr top_level_pwm.pcf -ucf top_level_pwm.ucf 
+bitgen -intstyle ise -f top_level_pwm.ut top_level_pwm.ncd 
+xst -intstyle ise -ifn "/home/kevin/projects/pwm/top_level_pwm.xst" -ofn "/home/kevin/projects/pwm/top_level_pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_level_pwm.ucf -p xc6slx16-csg324-3 top_level_pwm.ngc top_level_pwm.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_level_pwm_map.ncd top_level_pwm.ngd top_level_pwm.pcf 
+par -w -intstyle ise -ol high -mt off top_level_pwm_map.ncd top_level_pwm.ncd top_level_pwm.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_level_pwm.twx top_level_pwm.ncd -o top_level_pwm.twr top_level_pwm.pcf -ucf top_level_pwm.ucf 
+bitgen -intstyle ise -f top_level_pwm.ut top_level_pwm.ncd 
+xst -intstyle ise -ifn "/home/kevin/projects/pwm/top_level_pwm.xst" -ofn "/home/kevin/projects/pwm/top_level_pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_level_pwm.ucf -p xc6slx16-csg324-3 top_level_pwm.ngc top_level_pwm.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_level_pwm_map.ncd top_level_pwm.ngd top_level_pwm.pcf 
+par -w -intstyle ise -ol high -mt off top_level_pwm_map.ncd top_level_pwm.ncd top_level_pwm.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_level_pwm.twx top_level_pwm.ncd -o top_level_pwm.twr top_level_pwm.pcf -ucf top_level_pwm.ucf 
+bitgen -intstyle ise -f top_level_pwm.ut top_level_pwm.ncd 
+xst -intstyle ise -ifn "/home/kevin/projects/pwm/top_level_pwm.xst" -ofn "/home/kevin/projects/pwm/top_level_pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_level_pwm.ucf -p xc6slx16-csg324-3 top_level_pwm.ngc top_level_pwm.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_level_pwm_map.ncd top_level_pwm.ngd top_level_pwm.pcf 
+par -w -intstyle ise -ol high -mt off top_level_pwm_map.ncd top_level_pwm.ncd top_level_pwm.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_level_pwm.twx top_level_pwm.ncd -o top_level_pwm.twr top_level_pwm.pcf -ucf top_level_pwm.ucf 
+bitgen -intstyle ise -f top_level_pwm.ut top_level_pwm.ncd 
+xst -intstyle ise -ifn "/home/kevin/projects/pwm/top_level_pwm.xst" -ofn "/home/kevin/projects/pwm/top_level_pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_level_pwm.ucf -p xc6slx16-csg324-3 top_level_pwm.ngc top_level_pwm.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_level_pwm_map.ncd top_level_pwm.ngd top_level_pwm.pcf 
+par -w -intstyle ise -ol high -mt off top_level_pwm_map.ncd top_level_pwm.ncd top_level_pwm.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_level_pwm.twx top_level_pwm.ncd -o top_level_pwm.twr top_level_pwm.pcf -ucf top_level_pwm.ucf 
+bitgen -intstyle ise -f top_level_pwm.ut top_level_pwm.ncd 
+xst -intstyle ise -ifn "/home/kevin/projects/pwm/top_level_pwm.xst" -ofn "/home/kevin/projects/pwm/top_level_pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_level_pwm.ucf -p xc6slx16-csg324-3 top_level_pwm.ngc top_level_pwm.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_level_pwm_map.ncd top_level_pwm.ngd top_level_pwm.pcf 
+par -w -intstyle ise -ol high -mt off top_level_pwm_map.ncd top_level_pwm.ncd top_level_pwm.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_level_pwm.twx top_level_pwm.ncd -o top_level_pwm.twr top_level_pwm.pcf -ucf top_level_pwm.ucf 
+bitgen -intstyle ise -f top_level_pwm.ut top_level_pwm.ncd 
+xst -intstyle ise -ifn "/home/kevin/projects/pwm/top_level_pwm.xst" -ofn "/home/kevin/projects/pwm/top_level_pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_level_pwm.ucf -p xc6slx16-csg324-3 top_level_pwm.ngc top_level_pwm.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_level_pwm_map.ncd top_level_pwm.ngd top_level_pwm.pcf 
+par -w -intstyle ise -ol high -mt off top_level_pwm_map.ncd top_level_pwm.ncd top_level_pwm.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_level_pwm.twx top_level_pwm.ncd -o top_level_pwm.twr top_level_pwm.pcf -ucf top_level_pwm.ucf 
+bitgen -intstyle ise -f top_level_pwm.ut top_level_pwm.ncd 

@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# PlanAhead v14.5 (64-bit)
+# Build 247527 by xbuild on Mon Mar 25 17:11:23 MDT 2013
+# Start of session at: Thu May 23 00:29:15 2013
+# Process ID: 2826
+# Log file: /home/kevin/projects/pwm/planAhead_run_1/planAhead.log
+# Journal file: /home/kevin/projects/pwm/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/kevin/projects/pwm/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin B8 [get_ports button]
+endgroup
+set_property package_pin "" [get_ports [list  clock]]
+startgroup
+set_property package_pin C9 [get_ports button]
+endgroup
+set_property package_pin "" [get_ports [list  clock]]
+startgroup
+set_property package_pin B8 [get_ports button]
+endgroup
+startgroup
+set_property package_pin V10 [get_ports clock]
+endgroup
+startgroup
+set_property package_pin T10 [get_ports enable_button]
+endgroup
+save_constraints
+startgroup
+set_property package_pin U16 [get_ports led]
+endgroup
+set_property is_loc_fixed false [get_ports [list  led]]
+set_property is_loc_fixed true [get_ports [list  led]]
+save_constraints

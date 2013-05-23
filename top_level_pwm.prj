@@ -1,1 +1,2 @@
+vhdl work "pwm_module.vhd"
 vhdl work "top_level_pwm.vhd"
